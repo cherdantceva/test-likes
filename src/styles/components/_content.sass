@@ -1,0 +1,120 @@
+
+.calendar-content__container
+  display: flex
+
+.calendar-content__part
+  width: 50%
+
+.event-title
+  margin-top: 0
+  margin-bottom: 22px
+  line-height: 60px
+  font-size: 6.2rem
+  letter-spacing: -0.02em
+
+.event-date,
+.event-countdown
+  padding-left: 4px
+  line-height: 48px
+
+.event-time
+  display: inline-block
+  position: relative
+  padding-left: 40px
+  &:before
+    content: '•'
+    display: block
+    position: absolute
+    left: 14px
+    top: -2px
+
+.event-tag__btn
+  margin-top: 0.5em
+  margin-right: 12px
+
+.calendar-content-list
+  text-align: right
+
+.event-list
+  display: inline-block
+  margin-top: 6px
+  width: 550px
+  padding-left: 40px
+  padding-right: 45px
+  text-align: left
+
+.event-item
+  min-height: 92px
+  padding: 20px 0 10px
+  border-bottom: 1px solid #e1e1e1
+  &:first-child
+    border-top: 1px solid #e1e1e1
+
+.event-item__text
+  float: left
+
+.event-item-name
+  cursor: pointer
+  line-height: normal
+  transition: 0.2s color ease-in
+  &:hover
+    color: $color-mark
+    transition: 0.2s color ease-in
+
+.event-item-plase
+  font-size: 1.6rem
+  line-height: 22px
+  color: $body-light_1
+  cursor: pointer
+  transition: 0.2s color ease-in
+  &:hover
+    color: $color-body
+    transition: 0.2s color ease-in
+
+.event-item-type
+  display: inline-block
+  height: 20px
+  line-height: 21px
+  padding: 0 10px
+  background: $body-light_3
+  cursor: pointer
+  font-size: 1.4rem
+  font-weight: 800
+  text-transform: uppercase
+  letter-spacing: 0
+  border-radius: 20px
+  transition: 0.2s background ease-in, 0.3s color ease-in
+  &:hover
+    color: white
+    background: $color-mark
+    transition: 0.2s background ease-in, 0.3s color ease-in
+
+.event-item__time
+  float: right
+  color: $color-bold
+  font-size: 2.2rem
+  line-height: 32px
+
+.calendar-list-btn__container
+  margin-top: 16px;
+  text-align: left
+  width: 550px
+  display: inline-block
+  padding-left: 40px
+  padding-right: 45px
+
+.calendar-list-btn
+  text-transform: uppercase
+  font-size: 15px
+  letter-spacing: 0.8px
+  font-weight: bold
+
+.icon-open-arrow
+  width: 12px
+  height: 12px
+  border-left: 3px solid
+  border-bottom: 3px solid
+  transform: rotate(-45deg)
+  margin-top: -6px
+  margin-right: 4px
+  margin-left: -6px

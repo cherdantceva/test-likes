@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Тестовое</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="assets/lib.css">
     <link rel="stylesheet" href="assets/index.css">
@@ -11,140 +12,147 @@
 </head>
 <body>
 <article class="calendar">
-    <div class="container">
-        <div class="calendar-content">
-            <div class="calendar-content-descr">
+    <div class="calendar-content">
+        <div class="container calendar-content__container">
+            <div class="calendar-content__part calendar-content-descr">
                 <div class="event-descr">
-                    <h2 class="title">
+                    <h2 class="event-title">
                         Городской праздник здорового образа жизни
                     </h2>
-                    <div class="event-date">
-                        <span class="event-date__day text text-big text_strong">25 мая</span>
-                        <span class="event-time">14:00—21:30</span>
+                    <div class="event-date text text-big">
+                        <span class="event-date__day text_strong">25 мая</span>
+                        <span class="event-time text_light">14:00—21:30</span>
                     </div>
                     <div class="event-countdown">
-                        <span class="event-countdown-day">172</span>
-                        <span class="text">дня до юбилея</span>
+                        <span class="event-countdown-day text-big text_strong">172 </span>
+                        <span class="text text_light"> дня до юбилея</span>
                     </div>
                     <div class="event-tag">
-                        <a href="/" class="btn event-tag__btn">Город-сад</a>
-                        <a href="/" class="btn event-tag__btn">Город-спорт</a>
+                        <a href="/" class="btn btn_type1 event-tag__btn">Город-сад</a>
+                        <a href="/" class="btn btn_type1 event-tag__btn">Город-спорт</a>
                     </div>
                 </div>
             </div>
-            <div class="calendar-content-list">
+            <div class="calendar-content__part calendar-content-list">
                 <ul class="event-list">
-                    <li class="event-item">
-                            <span class="event-item__text">
-                                <span class="text">Проводы зимы или «Масленица»</span>
-                                <span class="event-item-plase">Площадь общественных меропориятий</span>
-                            </span>
-                        <span class="event-item__time">14:00</span>
-                    </li>
+                    <div class="event-item clearfix">
+                            <div class="text event-item__text">
+                                <div class="event-item-name">Проводы зимы или «Масленица»</div>
+                                <div class="event-item-plase">Площадь общественных меропориятий</div>
+                            </div>
+                        <div class="event-item__time">14:00</div>
+                    </div>
 
-                    <li class="event-item">
-                            <span class="event-item__text">
-                                <span class="text">Собираем урожай</span>
-                                <span class="event-item-plase">ДК «Аллюминщик»</span>
-                            </span>
+                    <div class="event-item clearfix">
+                            <div class="text event-item__text">
+                                <div class="event-item-name">Собираем урожай</div>
+                                <div class="event-item-plase">ДК «Аллюминщик»</div>
+                            </div>
                         <span class="event-item__time">14:00—14:50</span>
-                    </li>
+                    </div>
 
-                    <li class="event-item">
-                            <span class="event-item__text">
-                                <span class="text">Новый джаз у старой крепости</span>
-                                <span class="event-item-plase">Джаз-клуб «Геликон»</span>
-                            </span>
+                    <div class="event-item clearfix">
+                            <div class="text event-item__text">
+                                <div class="event-item-name">Новый джаз у старой крепости</div>
+                                <div class="event-item-plase">Джаз-клуб «Геликон»</div>
+                            </div>
                         <span class="event-item__time">15:00—15:30</span>
-                    </li>
+                    </div>
 
-                    <li class="event-item">
-                            <span class="event-item__text">
-                                <span class="text">Проводы зимы или «Масленица»</span>
-                                <span class="event-item-plase">Площадь общественных меропориятий</span>
-                            </span>
+                    <div class="event-item clearfix">
+                            <div class="text event-item__text">
+                                <div class="event-item-name">Проводы зимы или «Масленица»</div>
+                                <div class="event-item-type">Проект</div>
+                                <div class="event-item-plase">Площадь общественных меропориятий</div>
+                            </div>
                         <span class="event-item__time">20:30—21:30</span>
-                    </li>
+                    </div>
                 </ul>
-                <button class="btn btn_type1 calendar-content-list__btn">
-                    <span class="icon icon-open-arrow icon-open-arrow_down"></span>
-                    <span class="btn__text">ЕЩЕ 2 события</span>
-                </button>
+                <div class="calendar-list-btn__container">
+                    <button class="btn btn_type2 calendar-list-btn">
+                        <span class="icon icon-open-arrow icon-open-arrow_down"></span>
+                        <span class="btn__text">ЕЩЕ 2 события</span>
+                    </button>
+                </div>
+
             </div>
+
+        </div>
+    </div>
+    <div class="calendar-nav">
+        <div class="swiper-container">
             <div class="calendar-arrow-container">
                 <button class="calendar-arrow calendar-arrow-prev">-</button>
                 <button class="calendar-arrow calendar-arrow-next">-</button>
 
             </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide calendar-day no-active first-day">1</div>
+                <div class="swiper-slide calendar-day no-active">2</div>
+                <div class="swiper-slide calendar-day no-active">3</div>
+                <div class="swiper-slide calendar-day no-active">4</div>
+                <div class="swiper-slide calendar-day no-active">5</div>
+                <div class="swiper-slide calendar-day no-active">6</div>
+                <div class="swiper-slide calendar-day no-active">7</div>
+                <div class="swiper-slide calendar-day no-active">8</div>
+                <div class="swiper-slide calendar-day no-active">9</div>
+                <div class="swiper-slide calendar-day no-active">10</div>
+                <div class="swiper-slide calendar-day no-active">11</div>
+                <div class="swiper-slide calendar-day no-active">12</div>
+                <div class="swiper-slide calendar-day no-active">13</div>
+                <div class="swiper-slide calendar-day no-active">14</div>
+                <div class="swiper-slide calendar-day no-active">15</div>
+                <div class="swiper-slide calendar-day no-active">16</div>
+                <div class="swiper-slide calendar-day no-active">17</div>
+                <div class="swiper-slide calendar-day no-active">18</div>
+                <div class="swiper-slide calendar-day no-active">19</div>
+                <div class="swiper-slide calendar-day no-active">20</div>
+                <div class="swiper-slide calendar-day no-active">21</div>
+                <div class="swiper-slide calendar-day no-active">22</div>
+                <div class="swiper-slide calendar-day no-active">23</div>
+                <div class="swiper-slide calendar-day no-active">24</div>
+                <div class="swiper-slide calendar-day no-active">25</div>
+                <div class="swiper-slide calendar-day no-active">26</div>
+                <div class="swiper-slide calendar-day no-active">27</div>
+                <div class="swiper-slide calendar-day no-active">28</div>
+                <div class="swiper-slide calendar-day no-active">29</div>
+                <div class="swiper-slide calendar-day no-active">30</div>
+                <div class="swiper-slide calendar-day active today last-day">31</div>
+
+                <div class="swiper-slide calendar-day no-active first-day">1</div>
+                <div class="swiper-slide calendar-day no-active">2</div>
+                <div class="swiper-slide calendar-day no-active">3</div>
+                <div class="swiper-slide calendar-day no-active">4</div>
+                <div class="swiper-slide calendar-day no-active">5</div>
+                <div class="swiper-slide calendar-day no-active">6</div>
+                <div class="swiper-slide calendar-day no-active">7</div>
+                <div class="swiper-slide calendar-day no-active">8</div>
+                <div class="swiper-slide calendar-day no-active">9</div>
+                <div class="swiper-slide calendar-day no-active">10</div>
+                <div class="swiper-slide calendar-day no-active">11</div>
+                <div class="swiper-slide calendar-day no-active">12</div>
+                <div class="swiper-slide calendar-day no-active">13</div>
+                <div class="swiper-slide calendar-day no-active">14</div>
+                <div class="swiper-slide calendar-day no-active">15</div>
+                <div class="swiper-slide calendar-day no-active">16</div>
+                <div class="swiper-slide calendar-day no-active">17</div>
+                <div class="swiper-slide calendar-day no-active">18</div>
+                <div class="swiper-slide calendar-day no-active">19</div>
+                <div class="swiper-slide calendar-day no-active">20</div>
+                <div class="swiper-slide calendar-day no-active">21</div>
+                <div class="swiper-slide calendar-day no-active">22</div>
+                <div class="swiper-slide calendar-day no-active">23</div>
+                <div class="swiper-slide calendar-day no-active">24</div>
+                <div class="swiper-slide calendar-day no-active">25</div>
+                <div class="swiper-slide calendar-day no-active">26</div>
+                <div class="swiper-slide calendar-day no-active">27</div>
+                <div class="swiper-slide calendar-day no-active">28</div>
+                <div class="swiper-slide calendar-day no-active">29</div>
+                <div class="swiper-slide calendar-day no-active last-day">30</div>
+            </div>
         </div>
     </div>
 
-    <div class="swiper-container calendar-nav">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide calendar-day no-active first-day">1</div>
-            <div class="swiper-slide calendar-day no-active">2</div>
-            <div class="swiper-slide calendar-day no-active">3</div>
-            <div class="swiper-slide calendar-day no-active">4</div>
-            <div class="swiper-slide calendar-day no-active">5</div>
-            <div class="swiper-slide calendar-day no-active">6</div>
-            <div class="swiper-slide calendar-day no-active">7</div>
-            <div class="swiper-slide calendar-day no-active">8</div>
-            <div class="swiper-slide calendar-day no-active">9</div>
-            <div class="swiper-slide calendar-day no-active">10</div>
-            <div class="swiper-slide calendar-day no-active">11</div>
-            <div class="swiper-slide calendar-day no-active">12</div>
-            <div class="swiper-slide calendar-day no-active">13</div>
-            <div class="swiper-slide calendar-day no-active">14</div>
-            <div class="swiper-slide calendar-day no-active">15</div>
-            <div class="swiper-slide calendar-day no-active">16</div>
-            <div class="swiper-slide calendar-day no-active">17</div>
-            <div class="swiper-slide calendar-day no-active">18</div>
-            <div class="swiper-slide calendar-day no-active">19</div>
-            <div class="swiper-slide calendar-day no-active">20</div>
-            <div class="swiper-slide calendar-day no-active">21</div>
-            <div class="swiper-slide calendar-day no-active">22</div>
-            <div class="swiper-slide calendar-day no-active">23</div>
-            <div class="swiper-slide calendar-day no-active">24</div>
-            <div class="swiper-slide calendar-day no-active">25</div>
-            <div class="swiper-slide calendar-day no-active">26</div>
-            <div class="swiper-slide calendar-day no-active">27</div>
-            <div class="swiper-slide calendar-day no-active">28</div>
-            <div class="swiper-slide calendar-day no-active">29</div>
-            <div class="swiper-slide calendar-day no-active">30</div>
-            <div class="swiper-slide calendar-day active today last-day">31</div>
-
-            <div class="swiper-slide calendar-day no-active first-day">1</div>
-            <div class="swiper-slide calendar-day no-active">2</div>
-            <div class="swiper-slide calendar-day no-active">3</div>
-            <div class="swiper-slide calendar-day no-active">4</div>
-            <div class="swiper-slide calendar-day no-active">5</div>
-            <div class="swiper-slide calendar-day no-active">6</div>
-            <div class="swiper-slide calendar-day no-active">7</div>
-            <div class="swiper-slide calendar-day no-active">8</div>
-            <div class="swiper-slide calendar-day no-active">9</div>
-            <div class="swiper-slide calendar-day no-active">10</div>
-            <div class="swiper-slide calendar-day no-active">11</div>
-            <div class="swiper-slide calendar-day no-active">12</div>
-            <div class="swiper-slide calendar-day no-active">13</div>
-            <div class="swiper-slide calendar-day no-active">14</div>
-            <div class="swiper-slide calendar-day no-active">15</div>
-            <div class="swiper-slide calendar-day no-active">16</div>
-            <div class="swiper-slide calendar-day no-active">17</div>
-            <div class="swiper-slide calendar-day no-active">18</div>
-            <div class="swiper-slide calendar-day no-active">19</div>
-            <div class="swiper-slide calendar-day no-active">20</div>
-            <div class="swiper-slide calendar-day no-active">21</div>
-            <div class="swiper-slide calendar-day no-active">22</div>
-            <div class="swiper-slide calendar-day no-active">23</div>
-            <div class="swiper-slide calendar-day no-active">24</div>
-            <div class="swiper-slide calendar-day no-active">25</div>
-            <div class="swiper-slide calendar-day no-active">26</div>
-            <div class="swiper-slide calendar-day no-active">27</div>
-            <div class="swiper-slide calendar-day no-active">28</div>
-            <div class="swiper-slide calendar-day no-active">29</div>
-            <div class="swiper-slide calendar-day no-active last-day">30</div>
-        </div>
-    </div>
 </article>
 
 </body>

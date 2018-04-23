@@ -1,12 +1,79 @@
 *
   box-sizing: border-box
 
-.body
+html
   font-size: 10px
+
+body
   font-family: "Proxima Nova"
+  color: $color-body
+  letter-spacing: -0.02em
+
+.clearfix
+  &:after
+    content: ""
+    display: block
+    clear: both
+
+h2
+  color: $color-bold
+  font-size: 6.2rem
 
 
 .container
-  width: 1280px
+  max-width: 1280px
+  padding: 0 20px
   margin: 0 auto
 
+.text
+  font-size: 2rem
+  line-height: 36px
+  color: $color-body
+  letter-spacing: -0.02em
+
+.text-big
+  font-size: 2.8rem
+  line-height: 45px
+
+.text_strong
+  font-weight: bold
+  color: $color-bold
+
+.text_light
+  font-weight: 300
+  color: $body-light_4
+
+.btn
+  display: inline-block
+  padding: 0 30px
+  height: 4.2rem
+  line-height: 4.2rem
+  font-family: "Proxima Nova", sans-serif
+  font-weight: normal
+  font-size: 1.8rem
+  color: $color-body
+  outline: none
+  border: none
+  border-radius: 50px
+  text-decoration: none
+  cursor: pointer
+  transition: background-color 0.2s ease-in, color 0.3s ease-in
+  &:hover
+    transition: background-color 0.2s ease-in, color 0.3s ease-in
+
+.btn_type1
+  background: $body-light_3
+  &:hover
+    background: $color-mark
+    color: white
+
+.btn_type2
+  background: $color-mark
+  color: white
+  &:hover
+    background: $body-light_3
+    color: $color-body
+
+.icon
+  display: inline-block
+  vertical-align: middle

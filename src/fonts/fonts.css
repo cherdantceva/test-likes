@@ -39,3 +39,14 @@
     font-weight: 300;
     font-style: normal;
 }
+
+@font-face {
+    font-family: '21 Cent Condensed';
+    src: url('21CentCondensed.woff2') format('woff2'),
+    url('21CentCondensed.woff') format('woff'),
+    url('21CentCondensed.ttf') format('truetype'),
+    url('21CentCondensed.svg#21CentCondensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
