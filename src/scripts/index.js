@@ -5,8 +5,8 @@ window.Swiper = require('swiper');
 $(document).ready(function () {
 var mySwiper = new Swiper ('.swiper-container', {
     slidesPerView: 'auto',
-    spaceBetween: 7,
-    initialSlide: 26,
+    spaceBetween: 10,
+    initialSlide: 32,
     loop: false,
     centeredSlides: true,
     preventClicks: true,
