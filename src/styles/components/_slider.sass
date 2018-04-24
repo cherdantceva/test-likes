@@ -1,6 +1,12 @@
-.calendar-nav
-  padding-bottom: 30px
-  background: url("/img/calendar-line.png") repeat-x bottom
+.calendar-nav *:focus
+  outline: none
+
+.calendar-nav__container
+  position: relative
+  left: -20px
+  padding-bottom: 70px
+  padding-top: 85px
+  background: url("/img/calendar-line.png") repeat-x 40px 155px
 .calendar-day
   width: 62px
   height: 62px
@@ -29,7 +35,7 @@
 .calendar-day.current
   position: relative
   background: $color-mark
-  coolor: white
+  color: white
   &:hover
     background: white
     color: $color-mark
@@ -37,11 +43,71 @@
     content: 'сегодня'
     display: block
     position: absolute
-    left: 0
-    bottom: -30px
+    left: -5px
+    bottom: -60px
     font-size: 1.4rem
+    line-height: normal
     text-transform: uppercase
     font-weight: 800
     letter-spacing: 0.8px
     color: $color-body
     font-family: "Proxima Nova", sans-serif
+
+.last-day,
+.first-day
+  position: relative
+
+.month
+  font-family: 'Proxima Nova', sans-serif
+  line-height: normal
+  width: 270px
+  text-align: left
+
+.calendar-nav__month
+  position: absolute
+  top: -80px
+
+.calendar-month-text
+  font-size: 42px
+
+.calendar-year-text
+  font-size: 22px
+  margin-left: 10px
+
+.calendar-nav__month span
+  display: inline-block
+
+.first-day .calendar-nav__month
+  left: 14px
+
+.last-day .calendar-nav__month
+  left: -400px
+
+.calendar-arrows
+  position: relative
+
+.calendar-arrow-container
+  position: absolute
+  left: 25px
+  top: -110px
+
+.calendar-arrow
+  display: inline-block
+  background: transparent
+  width: 56px
+  height: 56px
+  line-height: 56px
+  text-align: center
+  border-radius: 50%
+  border: 2px solid #e1e1e1
+  color: #b1b1b1
+  cursor: pointer
+  transition: 0.2s border ease-in, 0.2s background ease-in, 0.2s color ease-in
+  &:hover
+    border: 1px solid $color-mark
+    background: $color-mark
+    color: white
+    transition: 0.2s border ease-in, 0.2s background ease-in, 0.2s color ease-in
+
+.calendar-arrow-prev
+  margin-right: 18px
