@@ -10,7 +10,7 @@
     "preimport-fonts": "mkdir -p dist/fonts",
     "import-fonts": "cp -r src/fonts dist",
     "precompile-sass": "npm run mkdir",
-    "compile-sass": "node-sass src/styles/index.sass > dist/assets/index.css && node-sass src/styles/lib.sass > dist/assets/lib.css",
+    "compile-sass": "node-sass src/styles/index.sass > dist/assets/index.css && node-sass src/styles/lib.sass > dist/assets/lib.css --output-style compressed",
     "postcompile-sass": "postcss --use autoprefixer dist/assets/index.css -d dist/assets",
     "watch-sass": "node-sass --watch --recursive --output dist/assets --source-map true --source-map-contents src/styles",
     "precopy-html": "npm run mkdir",
