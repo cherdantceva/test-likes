@@ -6,7 +6,7 @@ $(document).ready(function () {
 var mySwiper = new Swiper ('.swiper-container', {
     slidesPerView: 'auto',
     spaceBetween: 9,
-    initialSlide: 32,
+    initialSlide: 30,
     loop: false,
     centeredSlides: true,
     preventClicks: true,
